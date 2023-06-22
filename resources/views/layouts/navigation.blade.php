@@ -96,28 +96,28 @@
             </x-responsive-nav-link>
         </div>
         <!-- 一覧ページへのリンクを追加 -->
-        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-            <x-nav-link :href="route('tweet.index')" :active="request()->routeIs('tweet.index')">
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('tweet.index')" :active="request()->routeIs('tweet.index')">
                 {{ __('Index') }}
-            </x-nav-link>
+            </x-responsive-nav-link>
         </div>
         <!-- 作成ページへのリンクを追加 -->
-        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-            <x-nav-link :href="route('tweet.create')" :active="request()->routeIs('tweet.create')">
+        <div class="pt-2 pb-3 space-y-1">
+            <x-responsive-nav-link :href="route('tweet.create')" :active="request()->routeIs('tweet.create')">
                 {{ __('Create') }}
-            </x-nav-link>
+            </x-responsive-nav-link>
         </div>
         <!-- マイページへのリンクを追加 -->
-        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-          <x-nav-link :href="route('tweet.mypage')" :active="request()->routeIs('tweet.mypage')">
+        <div class="pt-2 pb-3 space-y-1">
+          <x-responsive-nav-link :href="route('tweet.mypage')" :active="request()->routeIs('tweet.mypage')">
             {{ __('Mypage') }}
-          </x-nav-link>
+          </x-responsive-nav-link>
         </div>
         <!-- タイムラインへのリンクを追加 -->
         <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-            <x-nav-link :href="route('tweet.timeline')" :active="request()->routeIs('tweet.timeline')">
+            <x-responsive-nav-link :href="route('tweet.timeline')" :active="request()->routeIs('tweet.timeline')">
                 {{ __('Timeline') }}
-            </x-nav-link>
+            </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
